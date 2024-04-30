@@ -1,0 +1,189 @@
+/* Letras */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+10+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+10&family=Jersey+10+Charted&family=Teko:wght@300..700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+span{
+    margin: 0px;
+    padding: 10px;
+}
+
+/* body  */
+
+body {
+    background-image: url(../img/CAPUCH.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav */
+
+/* nav {
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    left: 1%;
+    top: 1%;
+}
+
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    background-color: rgb(57, 99, 55, 0.8);
+    transition: 1s;
+} */
+/* Barra de navegacion*/
+
+.contenedor{
+    font-family: "Teko", sans-serif;
+    margin: 20px auto;
+    width: 90%;
+}
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: rgb(57, 99, 55, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.contenido-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.columna {
+    position: flex;
+    list-style: none;
+    padding: 1.2rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding: 1.5vw;
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+li.columna:hover {
+    background-color: #008849;
+}
+.columna1 {
+    display: none;
+    position: absolute;
+    margin-top: 1vw;
+
+}
+
+.columna1>li {
+    width: 100%;
+    transform: translateX(-20px);
+    border-bottom: 1px solid #fff;/*Para crear el submeno yy que todas las listas hijo se posicionen 20px abajo del eje x*/
+    text-align: center;
+    background-color: #24252a;
+}
+/*Establece bases de submenu*/
+.columna1>li:hover {
+    background-color: #089234;
+}
+/*Esto marca las casillas de color verde del submenu*/
+.columna:hover>.columna1 {
+    display: block;
+}
+
+/* contenido principal fotos */
+
+.fotos {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px; 
+}
+
+.container {
+    display: flex;
+    /* flex-wrap hace el efecto de que se van escondiendo las imágenes */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container div {
+    width: 45%; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container div img {
+    width: 100%;
+    height: 80%;
+}
+
+.container div span {
+    color: whitesmoke;
+    font-size: 30px; 
+    padding: 10px;
+    display: block;
+}
+
+.container div:hover span {
+    background-color: rgb(50, 53, 58);
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* @media screen */
+
+/* telefono */
+
+@media screen and (max-width: 767px) {
+    .container div {
+        width: 90%;
+    }
+}
+
+/* teléfono horizontal y tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container div{
+        width: 100%;
+    }
+}
+
+/* pantalla grande 1300px */
+
+@media screen and (min-width: 1300px) {
+    .contenedor {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
